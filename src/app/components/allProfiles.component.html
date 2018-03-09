@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h3>All Profiles:</h3>
+</div>
+<div class="jumbotron" *ngFor="let post of posts" style="margin:50px 50px 50px 50px">
+  <p class="h4">{{post.name}}</p><br/>
+  <p><a class="h6">Sports:</a> {{post.sports}}</p>
+  <p><a class="h6">Nationality:</a> {{post.nationality}}</p>
+  <p><a class="h6">Gender:</a> {{post.gender}}</p>
+  <a href="#{{post.name}}" class="btn btn-info" data-toggle="collapse">Details..</a><br/><br/>
+
+  <div id="{{post.name}}" class="collapse" >
+    <p><a class="h6">Date of Birth:</a> {{post.dob}}</p>
+    <p><a class="h6">Locations:</a> {{post.locations}}</p>
+    <p><a class="h6">Associations:</a> {{post.association}}</p>
+    <p><a class="h6">Team:</a> {{post.team}}</p>
+    <p><a class="h6">Abouts:</a> {{post.abouts}}</p>
+    <p><a class="h6">Interests:</a> {{post.interests}}</p>
+    <p><a class="h6">Charities:</a> {{post.charities}}</p>
+    <p><a class="h6">Drinks:</a> {{post.drinks}}</p>
+    <p><a class="h6">Married:</a> {{post.married}}</p>
+    <p><a class="h6">Image:</a> {{post.profile_image}}</p>
+    <p><a class="h6">Social Media:</a> {{post.social_media}}</p>
+  </div>
+</div>
